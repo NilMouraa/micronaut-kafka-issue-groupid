@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    name: micronautKafkaIssueGroupid
+kafka:
+  bootstrap:
+    servers: localhost:9092
+  consumers:
+    my-group-id:
+      value: io.confluent.kafka.serializers.KafkaJsonDeserializer
